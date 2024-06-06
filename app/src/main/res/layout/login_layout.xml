@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1570C0"
+    >
+
+    <FrameLayout
+        android:layout_width="95dp"
+        android:layout_height="40dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:gravity="center"
+        android:text="@string/nameTagHeading"
+        android:textColor="@color/white"
+
+        android:textSize="30sp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="109dp"
+            android:src="@drawable/mangaimg"
+
+            tools:ignore="ContentDescription"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck"></TextView>
+
+        <EditText
+            android:id="@+id/textUsername"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/edtUserName"
+            android:paddingStart="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="RtlSymmetry,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize">
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="25dp"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@color/white"
+
+            android:textSize="18sp"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/textPassword"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="#FFFFFFFF"
+            android:textColorHint="@color/white"
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/remember_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:icon="@drawable/common_google_signin_btn_icon_dark_normal_background"></Button>
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/forgotPass"-->
+<!--            style="?android:attr/buttonBarButtonStyle"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="Quên Mật Khẩu?">-->
+
+<!--        </Button>-->
+<!--    </LinearLayout>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="19dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:text="Bạn Chưa Có Tài Khoản?"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry,TextSizeCheck">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btnSignUpx"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:textColor="@color/white">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

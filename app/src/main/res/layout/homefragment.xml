@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Display.HomeFragment"
+    android:background="@color/black"
+    android:weightSum="5"
+    tools:menu="@menu/menucustom">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        tools:ignore="SpeakableTextPresentCheck"></androidx.viewpager.widget.ViewPager>
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:background="@color/black"
+        android:id="@+id/cricleIndicator"
+        android:layout_gravity="center_horizontal"
+        ></me.relex.circleindicator.CircleIndicator>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        >
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:padding="5dp"
+            android:id="@+id/gridView">
+        </GridView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_main"
+            android:textColor="@color/white"
+            ></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/aa"
+            app:civ_border_width="2dp"
+            android:id="@+id/anya"
+            app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/asta"
+            android:src="@drawable/asta"
+            app:civ_border_width="2dp"
+
+            app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/na"
+            app:civ_border_width="2dp"
+            android:id="@+id/naruto"
+            app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/lu"
+            app:civ_border_width="2dp"
+            android:id="@+id/levi"
+            app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/eren"
+            app:civ_border_width="2dp"
+            android:id="@+id/eren"
+            app:civ_border_color="#FF000000"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/kmy"
+            app:civ_border_width="2dp"
+            android:id="@+id/Tanjiro"
+            app:civ_border_color="#FF000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

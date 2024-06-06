@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Manga.BlackClover">
+
+    <!-- Phần 1: Hiển thị hình ảnh truyện -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/blcv">
+        </ImageView>
+    </LinearLayout>
+
+    <!-- Phần 2: ListView để hiển thị bình luận -->
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listviewblack"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Nhận Xét Truyện!"
+            android:id="@+id/sendComment"
+            android:onClick="onSendCommentClick"/> <!-- Đặt một sự kiện onClick cho nút -->
+    </LinearLayout>
+
+</LinearLayout>

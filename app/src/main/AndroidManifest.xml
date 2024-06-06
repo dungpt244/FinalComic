@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/na"
+        android:label="FreeTruyen"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestAplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".Manga.MangaCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AdminManga"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Manga.CommentAndReview"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.AttackOnTitan"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.AttackOnTitanChap1"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.Chapter4BlackClover"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.BlackCloverChapter3"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.Chap2BlackClover"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.BlackCloverChap1"
+            android:exported="false" />
+        <activity
+            android:name=".Manga.BlackClover"
+            android:exported="false" />
+        <activity
+            android:name=".Account.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".Account.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Display.History"
+            android:exported="false" />
+        <activity
+            android:name=".Display.ListFavorite"
+            android:exported="false" />
+        <activity
+            android:name=".Display.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Display.FragmentList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Account.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Account.Login"
+            android:exported="false" />
+    </application>
+
+</manifest>

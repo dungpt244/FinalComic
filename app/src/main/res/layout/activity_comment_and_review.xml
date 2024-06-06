@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Phần 1: Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bình Luận Và Nhận Xét Truyện"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="16dp">
+    </TextView>
+
+    <!-- Phần 2: ListView - chiếm phần còn lại của màn hình -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/listViewComment">
+    </ListView>
+
+    <!-- Phần 3: Giao diện cho việc bình luận -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/textComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:hint="Bình Luận Những Điều Bạn Muốn">
+        </EditText>
+
+        <Button
+            android:id="@+id/textSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi"
+            android:textSize="16sp">
+        </Button>
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa"
+            android:textSize="16sp">
+        </Button>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
